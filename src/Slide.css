@@ -1,0 +1,193 @@
+
+
+.mySwiper {
+  width: 80%;
+  height: 80%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.swiper-slide {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(85, 73, 145, 0.3);
+  transition: transform 0.3s;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.05);
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.s-block-button {
+  background-image: linear-gradient(to bottom right, #677bc2, #363cbb);
+}
+
+.p-block-button {
+  background-image: linear-gradient(to bottom right, #4ae6de, #47ad5b);
+}
+
+.d-block-button {
+  background-image: linear-gradient(to bottom right, #4e5cb6, #b458af);
+}
+
+.f-block-button {
+  background-image: linear-gradient(to bottom right, #b25c74, #58d68d);
+}
+
+.button-container button:hover {
+  background-color: #2980b9;
+}
+
+h2 {
+  margin-top: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-container {
+  margin-top: -530px;
+  margin-left: 390px;
+  background: rgba(255, 255, 255, 0.2);
+  width: 650px;
+  height: 250px;
+  border-radius: 20px;
+}
+
+img {
+  margin-top: -100px;
+  width: 250px;
+  height: 250px;
+}
+
+input[type='text'] {
+  margin-left: 290px;
+  margin-top: -130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  outline: none;
+  font-size: 16px;
+  width: 300px;
+}
+
+.search-btn {
+margin-top: 20px;
+width: 150px;
+
+  padding: 8px 16px;
+  background-image: linear-gradient(to bottom right, #7b55be, #3c3587);
+  color: white; 
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 360px; 
+  cursor: pointer;
+}
+
+
+.search-btn:hover {
+  background-color: #2980b9; 
+}
+h3{
+  color: white;
+  font-size: 30px;
+  margin-left: 250px;
+  margin-top: 50px;
+}
+
+
+.chemical-details {
+  border-radius: 20px;
+  width: 800px;
+  margin-top: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, sans-serif;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(85, 73, 145, 0.3);
+  transition: transform 0.3s;
+}
+
+.chemical-table {
+  border-radius: 20px;
+ 
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.chemical-table th {
+  background-color: #563d8b;
+  color: white;
+  text-align: left;
+  padding: 12px 8px;
+  border: 1px solid #563d8b;
+}
+
+.chemical-table td {
+  border: 1px solid #563d8b;
+  padding: 12px 8px;
+}
+
+.chemical-table tbody tr:nth-child(odd) {
+  background-color: #f6ebeb;
+}
+
+.chemical-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+@media screen and (max-width: 600px) {
+  .chemical-table {
+    overflow-x: auto;
+    display: block;
+  }
+
+  .chemical-table th, .chemical-table td {
+    white-space: nowrap;
+  }
+}
